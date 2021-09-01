@@ -1,13 +1,14 @@
 package br.com.johnnysouto.carteira.modelo;
 
-import java.util.Date;
+import java.math.BigDecimal;
+import java.time.LocalDate;
 
 public class Transacao {
 
 	private String ticker;
-	private Double preco;
+	private BigDecimal preco;
 	private int quantidade;
-	private Date data;
+	private LocalDate data;
 	private String tipo;
 
 	public String getTicker() {
@@ -18,11 +19,11 @@ public class Transacao {
 		this.ticker = ticker;
 	}
 
-	public Double getPreco() {
+	public BigDecimal getPreco() {
 		return preco;
 	}
 
-	public void setPreco(Double preco) {
+	public void setPreco(BigDecimal preco) {
 		this.preco = preco;
 	}
 
@@ -34,11 +35,11 @@ public class Transacao {
 		this.quantidade = quantidade;
 	}
 
-	public Date getData() {
+	public LocalDate getData() {
 		return data;
 	}
 
-	public void setData(Date data) {
+	public void setData(LocalDate data) {
 		this.data = data;
 	}
 
