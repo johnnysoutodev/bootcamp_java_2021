@@ -9,11 +9,11 @@ public class Transacao {
 	private BigDecimal preco;
 	private int quantidade;
 	private LocalDate data;
-	private String tipo;
+	private TipoTransacao tipo;
 	
 	public Transacao() {}
 
-	public Transacao(String ticker, BigDecimal preco, int quantidade, LocalDate data, String tipo) {
+	public Transacao(String ticker, BigDecimal preco, int quantidade, LocalDate data, TipoTransacao tipo) {
 		this.ticker = ticker;
 		this.preco = preco;
 		this.quantidade = quantidade;
@@ -53,11 +53,11 @@ public class Transacao {
 		this.data = data;
 	}
 
-	public String getTipo() {
+	public TipoTransacao getTipo() {
 		return tipo;
 	}
 
-	public void setTipo(String tipo) {
+	public void setTipo(TipoTransacao tipo) {
 		this.tipo = tipo;
 	}
 
