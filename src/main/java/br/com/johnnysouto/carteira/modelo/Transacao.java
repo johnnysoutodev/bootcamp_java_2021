@@ -10,6 +10,16 @@ public class Transacao {
 	private int quantidade;
 	private LocalDate data;
 	private String tipo;
+	
+	public Transacao() {}
+
+	public Transacao(String ticker, BigDecimal preco, int quantidade, LocalDate data, String tipo) {
+		this.ticker = ticker;
+		this.preco = preco;
+		this.quantidade = quantidade;
+		this.data = data;
+		this.tipo = tipo;
+	}
 
 	public String getTicker() {
 		return ticker;
