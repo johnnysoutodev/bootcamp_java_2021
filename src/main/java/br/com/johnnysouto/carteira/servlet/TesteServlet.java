@@ -1,6 +1,7 @@
 package br.com.johnnysouto.carteira.servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,7 +16,16 @@ public class TesteServlet extends HttpServlet {
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException { 
 		
 		String nome =  req.getParameter("nome");
-		resp.getWriter().println("Olá " + nome + "!");
+		
+		PrintWriter writer = resp.getWriter();
+		writer.println("<html>");
+		writer.println("<body>");
+		writer.println("<h1>");
+		writer.println(nome);
+		writer.println("</h1>");
+		writer.println("</body>");
+		writer.println("</html>");
+		
 		
 	}
 
