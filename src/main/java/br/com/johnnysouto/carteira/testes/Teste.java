@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+import br.com.johnnysouto.carteira.modelo.TipoTransacao;
 import br.com.johnnysouto.carteira.modelo.Transacao;
 
 public class Teste {
@@ -15,7 +16,7 @@ public class Teste {
 		t1.setPreco(new BigDecimal("10.00"));
 		t1.setQuantidade(100);
 		t1.setData(LocalDate.now());
-		t1.setTipo("Compra");
+		t1.setTipo(TipoTransacao.COMPRA);
 		
 		System.out.println(t1.getTicker());
 		System.out.println(t1.getPreco());
@@ -25,7 +26,7 @@ public class Teste {
 		
 		System.out.println(0.3 + 0.3 + 0.3);
 		
-		Transacao t2 = new Transacao("ITUB4", new BigDecimal("38.90"), 100, LocalDate.now(), "Compra");
+		Transacao t2 = new Transacao("ITUB4", new BigDecimal("38.90"), 100, LocalDate.now(), TipoTransacao.COMPRA);
 		
 		System.out.println(t2);
 
