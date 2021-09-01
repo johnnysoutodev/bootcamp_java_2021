@@ -61,4 +61,12 @@ public class Transacao {
 		this.tipo = tipo;
 	}
 
+	@Override
+	public String toString() {
+		return "Transacao [ticker=" + ticker + ", preco=" + preco + ", quantidade=" + quantidade + ", data=" + data
+				+ ", tipo=" + tipo + "]";
+	}
+	
+	
+
 }
