@@ -29,6 +29,10 @@ public class TransacoesServlet extends HttpServlet{
 		
 		transacoes.add(t1);
 		transacoes.add(t2);
+		
+		req.setAttribute("transacoes", transacoes);
+		
+		req.getRequestDispatcher("transacoes.jsp").forward(req, resp);
 	}
 
 }
