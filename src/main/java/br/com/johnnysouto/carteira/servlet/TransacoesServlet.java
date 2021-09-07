@@ -23,16 +23,18 @@ public class TransacoesServlet extends HttpServlet{
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		Transacao t1 = new Transacao("ITSA4", new BigDecimal("10.00"), 50, LocalDate.now(), TipoTransacao.COMPRA);
+		Transacao t1 = new Transacao("ITSA4", new BigDecimal("10.00"), 50, LocalDate.of(2021, 1, 1), TipoTransacao.COMPRA);
 		
-		Transacao t2 = new Transacao("BBSE3", new BigDecimal("22.80"), 80, LocalDate.now(), TipoTransacao.COMPRA);
+		Transacao t2 = new Transacao("BBSE3", new BigDecimal("22.80"), 80, LocalDate.of(2021, 2, 1), TipoTransacao.COMPRA);
 		
-		Transacao t3 = new Transacao("EGIE3", new BigDecimal("40.00"), 25, LocalDate.now(), TipoTransacao.COMPRA);
+		Transacao t3 = new Transacao("EGIE3", new BigDecimal("40.00"), 25, LocalDate.of(2021, 3, 5), TipoTransacao.COMPRA);
 		
-		Transacao t4 = new Transacao("ITSA4", new BigDecimal("11.20"), 40, LocalDate.now(), TipoTransacao.VENDA);
+		Transacao t4 = new Transacao("ITSA4", new BigDecimal("11.20"), 40, LocalDate.of(2021, 5, 15), TipoTransacao.VENDA);
 		
 		transacoes.add(t1);
 		transacoes.add(t2);
+		transacoes.add(t3);
+		transacoes.add(t4);
 		
 		req.setAttribute("transacoes", transacoes);
 		
