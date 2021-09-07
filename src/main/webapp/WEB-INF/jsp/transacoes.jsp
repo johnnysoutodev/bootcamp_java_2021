@@ -6,17 +6,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/bootstrap.css">
 <title>Lista de Transações</title>
 </head>
 <body>
-	<div class="row">
-		<div class="container">
+	<div class="container">
+		<div class="row">
 			<div>
 				<h1 class="text-center">Lista de Transações</h1>
 			</div>
 			<div>
-			
 				<table class="table">
 					<thead class="bg-secundary">
 						<tr>
@@ -43,6 +43,6 @@
 			
 		</div>
 	</div>
-	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>
