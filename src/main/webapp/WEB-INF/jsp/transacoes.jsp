@@ -6,33 +6,43 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.css">
 <title>Lista de Transações</title>
 </head>
 <body>
-	<h1>Lista de Transações</h1>
-	<table>
-		<thead>
-			<tr>
-				<th>TICKER</th>
-				<th>DATA</th>
-				<th>PREÇO</th>
-				<th>QUANTIDADE</th>
-				<th>TIPO</th>
-			</tr>
-		</thead>
-		<tbody>
-			<c:forEach items="${transacoes}" var="t">
-				<tr>
-					<td>${t.ticker}</td>
-					<td>${t.data}</td>
-					<td>${t.preco}</td>
-					<td>${t.quantidade}</td>
-					<td>${t.tipo}</td>
-				</tr>
-			</c:forEach>
-		</tbody>
-	</table>
-
+	<div class="row">
+		<div class="container">
+			<div>
+				<h1 class="text-center">Lista de Transações</h1>
+			</div>
+			<div>
+			
+				<table class="table">
+					<thead class="bg-secundary">
+						<tr>
+							<th>TICKER</th>
+							<th>DATA</th>
+							<th>PREÇO</th>
+							<th>QUANTIDADE</th>
+							<th>TIPO</th>
+						</tr>
+					</thead>
+					<tbody>
+						<c:forEach items="${transacoes}" var="t">
+							<tr>
+								<td>${t.ticker}</td>
+								<td>${t.data}</td>
+								<td>${t.preco}</td>
+								<td>${t.quantidade}</td>
+								<td>${t.tipo}</td>
+							</tr>
+						</c:forEach>
+					</tbody>
+			</table>
+			</div>
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
 </body>
 </html>
