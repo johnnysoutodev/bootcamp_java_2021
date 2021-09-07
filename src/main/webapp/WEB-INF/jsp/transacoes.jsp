@@ -17,8 +17,8 @@
 				<h1 class="text-center">Lista de Transações</h1>
 			</div>
 			<div>
-				<table class="table">
-					<thead class="bg-secundary">
+				<table class="table table-hover table-bordered table-striped">
+					<thead class="bg-primary">
 						<tr>
 							<th>TICKER</th>
 							<th>DATA</th>
