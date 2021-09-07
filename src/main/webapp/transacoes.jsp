@@ -7,6 +7,7 @@
 <title>Lista de Transações</title>
 </head>
 <body>
+	<h1>Lista de Transações</h1>
 	<table>
 		<thead>
 			<tr>
@@ -18,7 +19,7 @@
 			</tr>
 		</thead>
 		<tbody>
-		
+			
 		</tbody>
 	</table>
 
