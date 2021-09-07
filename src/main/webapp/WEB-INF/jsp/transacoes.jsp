@@ -19,20 +19,20 @@
 			<div>
 				<table class="table table-hover table-bordered table-striped">
 					<thead class="bg-primary">
-						<tr>
+						<tr class="text-center">
 							<th>TICKER</th>
 							<th>DATA</th>
 							<th>PREÇO</th>
 							<th>QUANTIDADE</th>
-							<th>TIPO</th>
+							<th>TIPO TRANSAÇÃO</th>
 						</tr>
 					</thead>
 					<tbody>
 						<c:forEach items="${transacoes}" var="t">
-							<tr>
+							<tr class="text-center">
 								<td>${t.ticker}</td>
 								<td>${t.data}</td>
-								<td>${t.preco}</td>
+								<td>R$ ${t.preco}</td>
 								<td>${t.quantidade}</td>
 								<td>${t.tipo}</td>
 							</tr>
