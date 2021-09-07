@@ -21,7 +21,15 @@
 			</tr>
 		</thead>
 		<tbody>
-			
+			<c:forEach items="${transacoes}" var="t">
+				<tr>
+					<td>${t.ticker}</td>
+					<td>${t.data}</td>
+					<td>${t.preco}</td>
+					<td>${t.quantidade}</td>
+					<td>${t.tipo}</td>
+				</tr>
+			</c:forEach>
 		</tbody>
 	</table>
 
