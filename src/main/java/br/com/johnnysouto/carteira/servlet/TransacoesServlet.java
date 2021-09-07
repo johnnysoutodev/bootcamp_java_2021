@@ -26,6 +26,9 @@ public class TransacoesServlet extends HttpServlet{
 		Transacao t1 = new Transacao("ITSA4", new BigDecimal("38.90"), 80, LocalDate.now(), TipoTransacao.COMPRA);
 		
 		Transacao t2 = new Transacao("BBSE3", new BigDecimal("27.75"), 20, LocalDate.now(), TipoTransacao.COMPRA);
+		
+		transacoes.add(t1);
+		transacoes.add(t2);
 	}
 
 }
