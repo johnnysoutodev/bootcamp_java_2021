@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/transacoes")
 public class TransacoesServlet extends HttpServlet{
 	
-	private List<Transacao> transacoes = new AraryList<>();
+	private List<Transacao> transacoes = new ArrayList<>();
 	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
