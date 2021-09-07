@@ -32,7 +32,7 @@ public class TransacoesServlet extends HttpServlet{
 		
 		req.setAttribute("transacoes", transacoes);
 		
-		req.getRequestDispatcher("transacoes.jsp").forward(req, resp);
+		req.getRequestDispatcher("WEB-INF/jsp/transacoes.jsp").forward(req, resp);
 	}
 
 }
