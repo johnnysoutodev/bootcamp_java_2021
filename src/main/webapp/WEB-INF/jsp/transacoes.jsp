@@ -13,6 +13,33 @@
 <body>
 	<div class="container">
 		<div class="row">
+			<form action="<c:url value="/transacoes"/>">
+				<div class="form-group">
+					<label for="ticker">Ticker</label>
+					<input id="ticker" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="data">Data</label>
+					<input id="data" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="preco">Preço</label>
+					<input id="preco" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="quantidade">Quantidade</label>
+					<input id="quantidade" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="tipo">Tipo Transação</label>
+					<input id="tipo" class="form-control">
+				</div>
+				<div>
+					<input type="submit" value="Salvar" class="mt-2 btn btn-primary">
+				</div>
+			</form>
+		</div>
+		<div class="row">
 			<div>
 				<h1 class="text-center">Lista de Transações</h1>
 			</div>
